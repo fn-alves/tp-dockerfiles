@@ -1,6 +1,6 @@
 # Define here the applications (based on Tiny Data) for which
 # you want to build and eventually push images
-$apps = [ 'nginx' , 'redis' ]
+$apps = [ 'nginx' ]
 
 # 
 $apps.each |$app| {
