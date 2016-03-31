@@ -5,7 +5,6 @@ MAINTAINER Example42 GmbH <info@example42.com>
 RUN yum install -y epel-release
 RUN yum install -y nginx supervisor && yum clean all
 RUN echo "[supervisord]\nnodaemon=true\n\n[program:nginx]\ncommand=nginx   -g 'daemon off;'" >> /etc/supervisord.conf
-# RUN echo "[supervisord]\nnodaemon=true\n\n[program:nginx]\ncommand=nginx   -g 'daemon off;'" > /etc/supervisord.d/nginx.conf
 
 EXPOSE 80
 VOLUME /usr/share/nginx/html

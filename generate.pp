@@ -19,6 +19,7 @@ $apps.each |$app| {
     push             => true,
     exec_environment => [ "DOCKER_CONFIG=${::docker_config}" ],
     # build_options  => '--no-cache',
+    command_mode     => 'supervisor',
   }
 
 }

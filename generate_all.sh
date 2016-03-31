@@ -1,7 +1,7 @@
 #!/bin/bash
 
-for os in $(ls -1 env_* | sed  's/env_//g'); do
+for os in $(ls -1 env/* | sed  's/env\///g'); do
   . config
-  . env_${os}
+  . env/${os}
   puppet apply -t --modulepath=modules generate.pp
 done

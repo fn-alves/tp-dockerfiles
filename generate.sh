@@ -2,7 +2,7 @@
 
 if [ -z $1 ]; then
   echo "Type the OS you want to use for base image"
-  ls -1 env_* | sed  's/env_//g'
+  ls -1 env/* | sed 's/env\///g'
   read os
   echo
 else
@@ -10,6 +10,6 @@ else
 fi
 
 . config
-. env_${os}
+. env/${os}
 
 puppet apply -t --modulepath=modules generate.pp
