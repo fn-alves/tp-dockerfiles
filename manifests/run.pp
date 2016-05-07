@@ -2,7 +2,7 @@
 #notify { $apps : }
 
 #$apps.each |$app| {
-  tp_docker::run { $::docker_app:
+  docker::run { $::docker_app:
     ensure           => present,
     username         => $::docker_username,
     repository_tag   => "${::docker_os}-${::docker_osversion}",

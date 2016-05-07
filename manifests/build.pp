@@ -2,7 +2,7 @@
 #$apps=inline_template("<%= scope.lookupvar('docker_apps').split(",") %>")
 #$apps.each |$app| {
 
-  tp_docker::build { $::docker_app:
+  docker::build { $::docker_app:
     ensure           => present,
     workdir          => $::docker_workdir,
     username         => $::docker_username,
