@@ -10,6 +10,9 @@ mod 'example42/tp',
 mod 'example42/tinydata',
   :git => 'git@github.com:example42/tinydata'
 
+mod 'example42/tp_docker',
+  :git => 'git@github.com:example42/tp_docker'
+
 ## Stdlib is a required dependency of tp
 mod 'puppetlabs/stdlib',
   :git => 'git@github.com:puppetlabs/puppetlabs-stdlib.git'

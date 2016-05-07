@@ -9,8 +9,6 @@ RUN apt-get update && \
 RUN echo "[supervisord]\nnodaemon=true\n\n[program:nginx]\ncommand=nginx   -g 'daemon off;'" >> /etc/supervisor/conf.d/nginx.conf
 
 EXPOSE 80
-VOLUME /usr/share/nginx/html
-VOLUME /var/log/nginx
-
+VOLUME /usr/share/nginx/html /var/log/nginx 
 
 CMD [ "/usr/bin/supervisord" , "-c" , "/etc/supervisor/supervisord.conf" ]
