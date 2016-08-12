@@ -1,6 +1,6 @@
 # Define here the applications (based on Tiny Data) for which
 # you want to build and eventually push images
-$apps = [ 'apache' ]
+$apps = [ 'puppet-agent' ]
 
 # 
 $apps.each |$app| {

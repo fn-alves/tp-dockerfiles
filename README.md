@@ -1,3 +1,10 @@
+# Deprecation notice
+
+This repo is no longer maintained.
+
+Check [example42 control-repo](https://github.com/example42/control-repo) for a complete Puppet environment with Docker integration..
+
+
 # Dockerfiles based on Tiny Data
 
 This repo contains the toolset needed to generate Dockerfiles and build the relevant images for different OS and different applications based on [Tiny Data](https://github.com/example42/tinydata). 
