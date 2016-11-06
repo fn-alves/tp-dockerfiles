@@ -4,10 +4,10 @@
 export FACTER_docker_app='puppet-agent'
 
 # Docker Hub username
-export FACTER_docker_username='example42'
+export FACTER_docker_username='fehraraujo'
 
 # Dockerfile maintainer
-export FACTER_docker_maintainer='Example42 GmbH <info@example42.com>'
+export FACTER_docker_maintainer='Fernando Alves <fehraraujo@gmail.com>'
 
 # Add volumes for data and log dirs in Dockerfiles
 export FACTER_docker_mount=false
